@@ -4,7 +4,7 @@ All 1,104 icon designs are centred horizontally and vertically, including
 the newly recreated Apps generic icon. PNGs returned to Projectivy are also
 centred at 320 x 180 pixels with a transparent background.
 
-Install Retro-80s-Icons-TV-Centred.apk over the previous Retro 80s Icons app.
+Install Retro-80s-Icons-TV.apk over the previous Retro 80s Icons app.
 It uses the same package and signing identity, so no uninstall is required.
 Open the app, choose Apply, then Apply in Projectivy and confirm.
 
