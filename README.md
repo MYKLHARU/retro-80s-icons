@@ -6,19 +6,21 @@ The website includes the complete collection of **1,104 designs**, search, 12 ca
 
 ## Android TV app
 
-- App: Retro 80s Icons, version 1.0.0
+- App: Retro 80s Icons, version 1.0.1
 - Package: `dev.retro80s.iconpack`
 - Requires Android TV 9 or newer
 - Designed for remote controls and Projectivy Launcher
 - APK: [Retro-80s-Icons-TV.apk](downloads/Retro-80s-Icons-TV.apk)
 - [Install guide](downloads/Install-guide.txt)
-- SHA-256: `c2eb6d00ba8ae3fed17357f270b50da889ad1f452042fcdb3024ac679286307b`
+- SHA-256: `eefb260f2575b8606d37c650d1d2f19d1243134a1459b7bc861210db6ae14791`
+
+Version 1.0.1 centres all 1,104 designs in the app and in icons returned to Projectivy. It also includes the redesigned Apps icon. Install it over the previous app, then reapply the pack in Projectivy.
 
 This is a separate app and repository from [Glitch Icons](https://github.com/MYKLHARU/glitch-icons).
 
 ## Website
 
-The intended address is **https://myklharu.github.io/retro-80s-icons/** after publishing.
+Visit the website at **https://myklharu.github.io/retro-80s-icons/**.
 
 This is a static site with no external dependencies, tracking, account requirements or paid services. Open `index.html` locally, or serve this directory with any static web server. The gallery needs JavaScript.
 

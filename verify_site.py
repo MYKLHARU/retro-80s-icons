@@ -57,7 +57,7 @@ class Page(HTMLParser):
             require('alt' in attrs, 'Image without alternate text')
         if tag == 'script':
             require('src' in attrs, 'Unexpected inline script')
-            self.scripts.append(attrs['src'])
+            self.scripts.append(urlsplit(attrs['src']).path)
         for key in ('src', 'href'):
             ref = attrs.get(key)
             if not ref:
@@ -66,7 +66,7 @@ class Page(HTMLParser):
                 self.anchors.append(ref[1:])
             elif not urlsplit(ref).scheme:
                 self.references.append(ref)
-        if attrs.get('href') == pack['apk']:
+        if urlsplit(attrs.get('href','')).path == pack['apk']:
             self.apk_links.append(attrs)
 
 page = Page()
@@ -83,7 +83,7 @@ for ref in page.references:
         require(part in {entry.name for entry in cursor.iterdir()}, 'Missing asset or incorrect filename case: ' + ref)
         cursor /= part
 require((ROOT / '.nojekyll').is_file(), 'Missing static-site marker')
-print(json.dumps({'status':'passed','icons':len(icons),'categories':len(counts),
+print(json.dumps({'status':'passed','version':pack['version'],'icons':len(icons),'categories':len(counts),
     'png_dimensions':'320 x 180 RGBA','all_pngs_static':True,'apk_sha256':pack['apkSha256'],
     'local_asset_links':len(page.references),'page_anchors':len(page.anchors),
     'external_runtime_dependencies':0}, indent=2))

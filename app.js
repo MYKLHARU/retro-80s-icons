@@ -9,7 +9,7 @@
   const ui = {search:$("search"),category:$("category"),sort:$("sort"),grid:$("icon-grid"),count:$("result-count"),clear:$("clear-filters"),empty:$("empty-state"),prev:$("previous-page"),next:$("next-page"),page:$("page-status"),dialog:$("icon-dialog"),close:$("dialog-close")};
   let page = 1, filtered = [], current = 0, opener = null;
   const normalise = s => s.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-  const imageUrl = icon => "icons/" + encodeURIComponent(icon.file);
+  const imageUrl = icon => "icons/" + encodeURIComponent(icon.file) + (icon.file==="appsgeneric.png" ? "?v="+encodeURIComponent(pack.version) : "");
   if (!pack || !all.length) {ui.count.textContent="The collection couldn’t load. Please refresh the page.";return;}
   for (const category of pack.categories) {
     const option = document.createElement("option");option.value=category.name;option.textContent=category.name+" ("+number.format(category.count)+")";ui.category.append(option);
