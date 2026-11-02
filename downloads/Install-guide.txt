@@ -1,0 +1,22 @@
+Retro 80s Icons — Android TV
+
+1,104 original retro icons, with a matching 80s interface, remote controls,
+search, 12 categories, artwork previews and a random-icon button.
+
+Requires Android TV 9 or newer. This is a separate app from Glitch Reflections.
+
+Install Retro-80s-Icons-TV.apk on your Android TV, then open Retro 80s Icons.
+Choose Apply > Apply in Projectivy and confirm the launcher's prompt.
+
+Manual route in Projectivy:
+Settings > Appearance > Cards > Icon pack > Retro 80s Icons.
+
+To choose a particular icon, open the launcher's custom icon picker and
+select Retro 80s Icons. The app will return the selected transparent PNG.
+
+The supplied 320 x 180 PNG artwork is included without recolouring, resizing
+or filters. Automatic app mappings cover the designs supplied in this pack;
+other icons can be selected individually. Glitch Reflections remains separate.
+
+The APK was checked in an isolated Android TV emulator. It has not been
+installed or tested on your physical TV or Shield in this chat.
